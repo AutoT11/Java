@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
+import org.junit.jupiter.api.DisplayName;
 
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.Keys;
@@ -17,6 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 public class VTB {
 
     @Test
+    @DisplayName("Проверка оформления кредита")
     void openBR() {
 
         WebDriver driver = new ChromeDriver(); //Нужно ли в каждом @TEST ???
