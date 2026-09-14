@@ -21,7 +21,7 @@ public class VTB {
     @DisplayName("Проверка оформления кредита")
     void openBR() {
 
-        WebDriver driver = new ChromeDriver(); //Нужно ли в каждом @TEST ???
+        WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.vtb.ru/");
         String title = driver.getTitle();

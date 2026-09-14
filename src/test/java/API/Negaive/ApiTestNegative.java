@@ -1,12 +1,10 @@
 package API.Negaive;
 
-import groovy.util.logging.PlatformLog;
 import io.restassured.response.Response;
-import net.bytebuddy.build.Plugin;
 import org.junit.jupiter.api.Test;
-import API.models.Заявки.Post.PostRequest;
-import API.models.Заявки.Post.PostResponse;
-import untils.TestNumberGenerator;
+import API.JSP.models.Post.PostRequest;
+import API.JSP.models.Post.PostResponse;
+import API.untils.TestNumberGenerator;
 import org.junit.jupiter.api.DisplayName;
 
 import static io.restassured.RestAssured.post;

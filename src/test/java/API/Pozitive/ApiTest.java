@@ -1,16 +1,14 @@
 package API.Pozitive;
 
-import API.models.Заявки.Patch.PatchRequest;
-import API.models.Заявки.Patch.PatchResponse;
-import API.models.Заявки.Put.PutRequest;
-import API.models.Заявки.Put.PutResponse;
-import io.restassured.RestAssured;
-import org.junit.jupiter.api.BeforeAll;
+import API.JSP.models.Patch.PatchRequest;
+import API.JSP.models.Patch.PatchResponse;
+import API.JSP.models.Put.PutRequest;
+import API.JSP.models.Put.PutResponse;
 import org.junit.jupiter.api.Test;
 import java.util.List;
-import API.models.Заявки.Post.PostRequest;
-import API.models.Заявки.Post.PostResponse;
-import untils.TestNumberGenerator;
+import API.JSP.models.Post.PostRequest;
+import API.JSP.models.Post.PostResponse;
+import API.untils.TestNumberGenerator;
 
 import static io.restassured.RestAssured.post;
 import static org.hamcrest.MatcherAssert.assertThat;
