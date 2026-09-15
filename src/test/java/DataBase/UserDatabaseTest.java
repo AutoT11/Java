@@ -193,6 +193,51 @@ public class UserDatabaseTest {
     }
 
 
+    @Test
+    @DisplayName("Проверка удаления записи в user")
+    void deleteUser() throws SQLException {
+
+        int userId = 0;
+        String originalName = "Test user_Delete";
+        String testEmail = "Test555@gmail.com";
+
+        try (Connection connection = DatabaseConnection.getConnection()) {
+
+            String insertSql =
+                    """
+                    INSERT INTO users (name, email)
+                    VALUES (?, ?)
+                    """;
+
+            try (PreparedStatement insert = connection.prepareStatement(
+                    insertSql,
+                    Statement.RETURN_GENERATED_KEYS
+            )) {
+                insert.setString(1, originalName);
+                insert.setString(2, testEmail);
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 
 
 
