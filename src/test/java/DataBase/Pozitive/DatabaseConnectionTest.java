@@ -1,5 +1,6 @@
-package DataBase;
+package DataBase.Pozitive;
 
+import DataBase.DatabaseConnection;
 import org.junit.jupiter.api.Test;
 
 import java.sql.*;
